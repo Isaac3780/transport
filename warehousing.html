@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warehousing Enquiry — CJS Lines | Singapore Logistics</title>
+  <meta name="description" content="Enquire about warehousing, storage, handling and loading/unloading services with CJS Lines in Singapore." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html" aria-label="CJS Lines home">
+          <div class="logo-icon"><i class="fa-solid fa-ship"></i></div>
+          <div class="logo-text">
+            <strong>CJS Lines</strong>
+            <span>Singapore Logistics</span>
+          </div>
+        </a>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="freight-enquiry.html">Freight Enquiry</a></li>
+          <li><a href="shipping-schedule.html">Shipment Details</a></li>
+          <li><a href="warehousing.html" class="active">Warehousing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" style="min-height: 340px;">
+      <div class="container hero-content">
+        <h1>Warehousing &amp; <span>Storage Enquiry</span></h1>
+        <p>Secure storage, professional handling and loading/unloading support tailored to your business.</p>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Warehouse Support</h2>
+          <p>Flexible warehousing solutions designed around your inventory and distribution needs.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+            <h3>Secure Storage</h3>
+            <p>Clean, organised warehouse space for short-term and long-term storage of goods and materials.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon"><i class="fa-solid fa-dolly"></i></div>
+            <h3>Handling &amp; Sorting</h3>
+            <p>Receiving, inspection, palletising, repacking and inventory sorting handled with care.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon"><i class="fa-solid fa-truck-ramp-box"></i></div>
+            <h3>Loading / Unloading</h3>
+            <p>Efficient container and truck loading/unloading to minimise turnaround time.</p>
+          </article>
+          <article class="service-card">
+            <div class="icon"><i class="fa-solid fa-ruler-combined"></i></div>
+            <h3>Space Requirements</h3>
+            <p>Tell us your expected volume and duration. We will propose a practical space plan.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form -->
+    <section class="section section-grey">
+      <div class="container">
+        <div class="form-intro">
+          <h2>Warehouse Enquiry Form</h2>
+          <p>Tell us what you need to store and handle. We will recommend a suitable solution.</p>
+        </div>
+        <div class="form-card">
+          <form class="warehousing-form" action="#" method="post" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="wh-name">Full Name <span style="color:#b71c1c;">*</span></label>
+                <input type="text" id="wh-name" name="name" placeholder="John Tan" required />
+              </div>
+              <div class="form-group">
+                <label for="wh-company">Company Name</label>
+                <input type="text" id="wh-company" name="company" placeholder="Your company" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="wh-email">Email Address <span style="color:#b71c1c;">*</span></label>
+                <input type="email" id="wh-email" name="email" placeholder="john@company.com" required />
+              </div>
+              <div class="form-group">
+                <label for="wh-phone">Phone / WhatsApp</label>
+                <input type="tel" id="wh-phone" name="phone" placeholder="+65 8123 4567" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="wh-service">Service Required <span style="color:#b71c1c;">*</span></label>
+                <select id="wh-service" name="service" required>
+                  <option value="">Select a service</option>
+                  <option value="storage-only">Storage only</option>
+                  <option value="storage-handling">Storage + handling</option>
+                  <option value="loading-unloading">Loading / unloading only</option>
+                  <option value="full-warehousing">Full warehousing solution</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="wh-duration">Estimated Duration</label>
+                <select id="wh-duration" name="duration">
+                  <option value="">Not sure</option>
+                  <option value="less-1-month">Less than 1 month</option>
+                  <option value="1-3-months">1–3 months</option>
+                  <option value="3-6-months">3–6 months</option>
+                  <option value="6-12-months">6–12 months</option>
+                  <option value="over-1-year">Over 1 year</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="wh-space">Estimated Space Required</label>
+                <input type="text" id="wh-space" name="space" placeholder="e.g. 100 sq ft / 20 pallets" />
+              </div>
+              <div class="form-group">
+                <label for="wh-goods">Type of Goods</label>
+                <input type="text" id="wh-goods" name="goods" placeholder="e.g. electronics, retail stock" />
+              </div>
+            </div>
+
+            <div class="form-group full">
+              <label for="wh-handling">Handling Requirements</label>
+              <textarea id="wh-handling" name="handling" placeholder="Forklift, pallet jack, fragile goods, stacking limits, temperature requirements..."></textarea>
+            </div>
+
+            <div class="form-group full">
+              <label for="wh-message">Additional Information</label>
+              <textarea id="wh-message" name="message" placeholder="Expected inbound/outbound volumes, preferred start date, special instructions..."></textarea>
+            </div>
+
+            <div class="form-group full estimator always" id="wh-estimator">
+              <h4><i class="fa-solid fa-ruler-combined"></i> Quick space estimator</h4>
+              <label for="wh-pallets">Number of pallets: <strong id="wh-pallets-out">10</strong></label>
+              <input type="range" id="wh-pallets" name="pallets" min="0" max="200" step="1" value="10" />
+              <label for="wh-weeks" style="margin-top: 10px;">Estimated stay: <strong id="wh-weeks-out">4 weeks</strong></label>
+              <input type="range" id="wh-weeks" name="weeks" min="1" max="52" step="1" value="4" />
+              <p class="est-out" id="wh-estimate-out"></p>
+              <p class="est-note">Rough guide only (≈18 sq ft per pallet plus aisles). We confirm exact space after a quick chat.</p>
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+            </div>
+
+            <div class="success-message">
+              <i class="fa-solid fa-circle-check"></i> Thank you. Your warehousing enquiry has been received and our team will respond shortly.
+            </div>
+            <p class="form-note text-center">This is a prototype form. No data is sent to a server.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>CJS Lines</h3>
+        <p>Humble Beginnings. Dedicated Service. Moving Forward Together. Singapore-based logistics solutions built on trust and a personal touch.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#sea-freight">Sea Freight</a></li>
+          <li><a href="services.html#road-freight">Road Freight</a></li>
+          <li><a href="services.html#export-freight">Export Freight</a></li>
+          <li><a href="warehousing.html">Warehousing</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><i class="fa-solid fa-phone"></i> <a href="tel:+6561234567">+65 6123 4567</a></p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:enquiry@cjslines.sg">enquiry@cjslines.sg</a></p>
+        <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/6561234567" target="_blank" rel="noopener">WhatsApp Us</a></p>
+        <p><i class="fa-solid fa-location-dot"></i> Singapore</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 CJS Lines. All rights reserved. <a href="admin.html" style="color: var(--silver);">Staff Login</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

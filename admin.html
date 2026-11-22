@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Login — CJS Lines | Singapore Logistics</title>
+  <meta name="description" content="Staff login concept for CJS Lines schedule and enquiry management." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html" aria-label="CJS Lines home">
+          <div class="logo-icon"><i class="fa-solid fa-ship"></i></div>
+          <div class="logo-text">
+            <strong>CJS Lines</strong>
+            <span>Singapore Logistics</span>
+          </div>
+        </a>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="freight-enquiry.html">Freight Enquiry</a></li>
+          <li><a href="shipping-schedule.html">Shipment Details</a></li>
+          <li><a href="warehousing.html">Warehousing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Login view -->
+    <section class="admin-login admin-login-view">
+      <div class="admin-card">
+        <div class="logo-icon"><i class="fa-solid fa-lock"></i></div>
+        <h2>Staff Login</h2>
+        <p>Enter your credentials to access the management dashboard.</p>
+
+        <div class="error-message admin-error" role="alert"></div>
+
+        <form class="admin-login-form" action="#" method="post" novalidate>
+          <div class="form-group">
+            <label for="admin-user">Username</label>
+            <input type="text" id="admin-user" name="username" placeholder="admin" required />
+          </div>
+          <div class="form-group">
+            <label for="admin-pass">Password</label>
+            <input type="password" id="admin-pass" name="password" placeholder="••••••••" required />
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Log In</button>
+        </form>
+
+        <p class="form-note text-center" style="margin-bottom: 0;">Demo credentials: <strong>admin / admin123</strong></p>
+      </div>
+    </section>
+
+    <!-- Dashboard view (hidden until login) -->
+    <section class="section admin-dashboard" style="display: none;">
+      <div class="container">
+        <div class="section-title" style="text-align: left;">
+          <h2>Admin Dashboard</h2>
+          <p>Welcome back. Manage enquiries, schedules and documents from one place.</p>
+        </div>
+
+        <div class="admin-body"></div>
+
+        <div class="text-center">
+          <button class="btn btn-navy admin-logout"><i class="fa-solid fa-right-from-bracket"></i> Log Out</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>CJS Lines</h3>
+        <p>Humble Beginnings. Dedicated Service. Moving Forward Together. Singapore-based logistics solutions built on trust and a personal touch.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#sea-freight">Sea Freight</a></li>
+          <li><a href="services.html#road-freight">Road Freight</a></li>
+          <li><a href="services.html#export-freight">Export Freight</a></li>
+          <li><a href="warehousing.html">Warehousing</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><i class="fa-solid fa-phone"></i> <a href="tel:+6561234567">+65 6123 4567</a></p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:enquiry@cjslines.sg">enquiry@cjslines.sg</a></p>
+        <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/6561234567" target="_blank" rel="noopener">WhatsApp Us</a></p>
+        <p><i class="fa-solid fa-location-dot"></i> Singapore</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 CJS Lines. All rights reserved. <a href="admin.html" style="color: var(--silver);">Staff Login</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

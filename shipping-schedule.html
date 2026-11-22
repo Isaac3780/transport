@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shipment Details — CJS Lines | Singapore Logistics</title>
+  <meta name="description" content="Send CJS Lines your shipment details — loading port, discharge port, cargo description, measurement, readiness, packing and cargo photos — for a prompt quote." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html" aria-label="CJS Lines home">
+          <div class="logo-icon"><i class="fa-solid fa-ship"></i></div>
+          <div class="logo-text">
+            <strong>CJS Lines</strong>
+            <span>Singapore Logistics</span>
+          </div>
+        </a>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="freight-enquiry.html">Freight Enquiry</a></li>
+          <li><a href="shipping-schedule.html" class="active">Shipment Details</a></li>
+          <li><a href="warehousing.html">Warehousing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" style="min-height: 340px;">
+      <img class="hero-image" src="ship%201.jpeg" alt="" aria-hidden="true" />
+      <div class="container hero-content">
+        <h1>Shipment <span>Details</span></h1>
+        <p>Thank you for reaching out to CJS Lines. Please fill in the details below so we can prepare a quote and arrange your booking.</p>
+      </div>
+    </section>
+
+    <!-- Shipment details form -->
+    <section class="section section-grey">
+      <div class="container">
+        <div class="section-title">
+          <h2>Tell Us About Your Shipment</h2>
+          <p>All fields marked <span style="color:#b71c1c;">*</span> are required. The more detail you give, the faster we can quote.</p>
+        </div>
+
+        <div class="shipment-layout">
+
+          <div class="form-card">
+            <form class="shipment-form" action="#" method="post" novalidate enctype="multipart/form-data">
+
+              <div class="form-section-title"><span>1</span> Your Details</div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="ship-ref">Reference / Booking Number</label>
+                  <input type="text" id="ship-ref" name="reference" placeholder="e.g. CJS-F-2026-0001" />
+                </div>
+                <div class="form-group">
+                  <label for="ship-name">Name <span style="color:#b71c1c;">*</span></label>
+                  <input type="text" id="ship-name" name="name" placeholder="Your name" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="ship-email">Email Address <span style="color:#b71c1c;">*</span></label>
+                  <input type="email" id="ship-email" name="email" placeholder="you@company.com" required />
+                </div>
+                <div class="form-group">
+                  <label for="ship-phone">Phone / WhatsApp</label>
+                  <input type="tel" id="ship-phone" name="phone" placeholder="+65 9101 4472" />
+                </div>
+              </div>
+              <div class="form-group full">
+                <label for="ship-company">Company Name</label>
+                <input type="text" id="ship-company" name="company" placeholder="Your company" />
+              </div>
+
+              <div class="form-section-title"><span>2</span> Shipment Details</div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="ship-pol">Loading Port <span style="color:#b71c1c;">*</span></label>
+                  <input type="text" id="ship-pol" name="loadingPort" placeholder="e.g. Singapore" required />
+                </div>
+                <div class="form-group">
+                  <label for="ship-pod">Discharge Port <span style="color:#b71c1c;">*</span></label>
+                  <input type="text" id="ship-pod" name="dischargePort" placeholder="e.g. Port Klang" required />
+                </div>
+              </div>
+              <div class="form-group full">
+                <label for="ship-cargo">Cargo Description <span style="color:#b71c1c;">*</span></label>
+                <textarea id="ship-cargo" name="cargo" placeholder="Type of goods, HS code if known" required></textarea>
+              </div>
+
+              <div class="form-section-title"><span>3</span> Measurement</div>
+              <div class="form-row form-row-3">
+                <div class="form-group">
+                  <label for="ship-l">Length (cm) <span style="color:#b71c1c;">*</span></label>
+                  <input type="number" id="ship-l" name="length" min="0" step="0.01" placeholder="0" required />
+                </div>
+                <div class="form-group">
+                  <label for="ship-w">Width (cm) <span style="color:#b71c1c;">*</span></label>
+                  <input type="number" id="ship-w" name="width" min="0" step="0.01" placeholder="0" required />
+                </div>
+                <div class="form-group">
+                  <label for="ship-h">Height (cm) <span style="color:#b71c1c;">*</span></label>
+                  <input type="number" id="ship-h" name="height" min="0" step="0.01" placeholder="0" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="ship-cbm">CBM / Measurement (m³) <span style="color:#b71c1c;">*</span></label>
+                  <input type="number" id="ship-cbm" name="cbm" min="0" step="0.01" placeholder="e.g. 12.5" required />
+                </div>
+                <div class="form-group">
+                  <label for="ship-weight">Gross Weight (kg) <span style="color:#b71c1c;">*</span></label>
+                  <input type="number" id="ship-weight" name="weight" min="0" step="0.01" placeholder="e.g. 2000" required />
+                </div>
+              </div>
+
+              <div class="form-section-title"><span>4</span> Cargo Readiness &amp; Packing</div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="ship-ready">Ready Date <span style="color:#b71c1c;">*</span></label>
+                  <input type="date" id="ship-ready" name="readyDate" required />
+                </div>
+                <div class="form-group">
+                  <label for="ship-etd">Target ETD</label>
+                  <input type="date" id="ship-etd" name="targetEtd" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="ship-packing">Packing Type <span style="color:#b71c1c;">*</span></label>
+                  <select id="ship-packing" name="packing" required>
+                    <option value="">Select a packing type</option>
+                    <option value="Pallets">Pallets</option>
+                    <option value="Cartons">Cartons</option>
+                    <option value="Crates">Crates</option>
+                    <option value="Loose">Loose</option>
+                    <option value="other">Other — please specify</option>
+                  </select>
+                </div>
+                <div class="form-group" id="ship-other-wrap" hidden>
+                  <label for="ship-packing-other">Specify packing type</label>
+                  <input type="text" id="ship-packing-other" name="packingOther" placeholder="e.g. Steel drums" />
+                </div>
+              </div>
+
+              <div class="form-section-title"><span>5</span> Cargo Photo</div>
+              <div class="form-group full">
+                <label>Picture (if any)</label>
+                <label class="photo-drop" for="ship-photos">
+                  <i class="fa-solid fa-camera"></i>
+                  <span>Click to attach cargo photos<br /><small>Up to 3 images, max 250 KB each</small></span>
+                </label>
+                <input type="file" id="ship-photos" accept="image/*" multiple />
+                <div class="photo-previews" id="ship-previews"></div>
+                <p class="form-note">Please attach cargo photos if available — it helps us prepare an accurate quote.</p>
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Send Shipment Details</button>
+              </div>
+              <div class="success-message"></div>
+              <p class="form-note text-center">Once we receive this information, we will get back to you promptly with our rates and schedule.</p>
+            </form>
+          </div>
+
+          <aside class="shipment-aside">
+            <div class="info-card">
+              <h3><i class="fa-solid fa-circle-info"></i> What Happens Next?</h3>
+              <p>Once we receive this information, we will get back to you promptly with our rates and schedule.</p>
+              <ul>
+                <li>We check your cargo details and measurement</li>
+                <li>We confirm space and the next available schedule</li>
+                <li>You receive a quote, then we arrange the booking</li>
+              </ul>
+            </div>
+            <div class="signature-card">
+              <h3>Jenny</h3>
+              <p class="role">CJS Lines Freight &amp; Transportation</p>
+              <p><i class="fa-solid fa-phone"></i> <a href="tel:+6591014472">Tel: +65 9101 4472</a></p>
+              <p><i class="fa-solid fa-envelope"></i> <a href="mailto:jenny@cjslines.com">Email: jenny@cjslines.com</a></p>
+            </div>
+            <div class="info-card">
+              <h3><i class="fa-solid fa-shield-halved"></i> Your Details Stay With Us</h3>
+              <p>This information is used only to prepare your quotation and booking. Nothing is published on this website.</p>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>CJS Lines</h3>
+        <p>Humble Beginnings. Dedicated Service. Moving Forward Together. Singapore-based logistics solutions built on trust and a personal touch.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#sea-freight">Sea Freight</a></li>
+          <li><a href="services.html#road-freight">Road Freight</a></li>
+          <li><a href="services.html#export-freight">Export Freight</a></li>
+          <li><a href="warehousing.html">Warehousing</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><i class="fa-solid fa-phone"></i> <a href="tel:+6561234567">+65 6123 4567</a></p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:enquiry@cjslines.sg">enquiry@cjslines.sg</a></p>
+        <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/6561234567" target="_blank" rel="noopener">WhatsApp Us</a></p>
+        <p><i class="fa-solid fa-location-dot"></i> Singapore</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 CJS Lines. All rights reserved. <a href="admin.html" style="color: var(--silver);">Staff Login</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
